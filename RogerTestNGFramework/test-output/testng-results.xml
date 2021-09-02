@@ -2,71 +2,38 @@
 <testng-results ignored="0" total="4" passed="1" failed="1" skipped="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-06-20T13:57:58 IST" name="Default suite" finished-at="2021-06-20T13:58:23 IST" duration-ms="25079">
+  <suite started-at="2021-08-30T09:04:36 IST" name="Default suite" finished-at="2021-08-30T09:05:12 IST" duration-ms="36080">
     <groups>
     </groups>
-    <test started-at="2021-06-20T13:57:58 IST" name="Default test" finished-at="2021-06-20T13:58:23 IST" duration-ms="25079">
-      <class name="testCases.TC4_VerifyNavigation">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.TC4_VerifyNavigation@4145bad8]" started-at="2021-06-20T13:57:58 IST" name="setUp" finished-at="2021-06-20T13:58:13 IST" duration-ms="14973" status="PASS">
+    <test started-at="2021-08-30T09:04:36 IST" name="Default test" finished-at="2021-08-30T09:05:12 IST" duration-ms="36080">
+      <class name="testCases.TC2_ListFlights">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.TC2_ListFlights@3646a422]" started-at="2021-08-30T09:04:36 IST" name="setUp" finished-at="2021-08-30T09:05:10 IST" duration-ms="34193" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="userSelectReprintTicket()[pri:0, instance:testCases.TC4_VerifyNavigation@4145bad8]" started-at="2021-06-20T13:58:13 IST" name="userSelectReprintTicket" finished-at="2021-06-20T13:58:22 IST" duration-ms="9140" status="PASS">
+        <test-method signature="userSelectTravelType()[pri:0, instance:testCases.TC2_ListFlights@3646a422]" started-at="2021-08-30T09:05:10 IST" name="userSelectTravelType" finished-at="2021-08-30T09:05:11 IST" duration-ms="744" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- userSelectReprintTicket -->
-        <test-method signature="verifySignin()[pri:0, instance:testCases.TC4_VerifyNavigation@4145bad8]" started-at="2021-06-20T13:58:22 IST" name="verifySignin" finished-at="2021-06-20T13:58:22 IST" depends-on-methods="testCases.TC4_VerifyNavigation.userSelectReprintTicket" duration-ms="40" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        </test-method> <!-- userSelectTravelType -->
+        <test-method signature="userEntersTraveDetails(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC2_ListFlights@3646a422]" started-at="2021-08-30T09:05:11 IST" name="userEntersTraveDetails" finished-at="2021-08-30T09:05:11 IST" depends-on-methods="testCases.TC2_ListFlights.userSelectTravelType" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='SignIn_btnLogin']"}
-  (Session info: chrome=91.0.4472.106)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.0.0-beta-1', revision: '9c03156c2b'
-System info: host: 'LAPTOP-94V3K8RC', ip: '169.254.251.58', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [735b75e5855614f7d064016f8db3d78f, findElement {using=xpath, value=//input[@id='SignIn_btnLogin']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.106, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:63826}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 735b75e5855614f7d064016f8db3d78f]]>
+              <![CDATA[
+Parameter 'source' is required by @Test on method userEntersTraveDetails but has not been marked @Optional or defined
+in C:\Users\lenovo\AppData\Local\Temp\testng-eclipse-992804238\testng-customsuite.xml]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='SignIn_btnLogin']"}
-  (Session info: chrome=91.0.4472.106)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.0.0-beta-1', revision: '9c03156c2b'
-System info: host: 'LAPTOP-94V3K8RC', ip: '169.254.251.58', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [735b75e5855614f7d064016f8db3d78f, findElement {using=xpath, value=//input[@id='SignIn_btnLogin']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.106, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:63826}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 735b75e5855614f7d064016f8db3d78f
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:195)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:128)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:153)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:128)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:620)
-at org.openqa.selenium.remote.RemoteWebDriver$Mechanism$2.findElement(RemoteWebDriver.java:1255)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:388)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at com.sun.proxy.$Proxy17.isDisplayed(Unknown Source)
-at pages.SignInPage.verifySignInDisplayed(SignInPage.java:18)
-at testCases.TC4_VerifyNavigation.verifySignin(TC4_VerifyNavigation.java:41)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'source' is required by @Test on method userEntersTraveDetails but has not been marked @Optional or defined
+in C:\Users\lenovo\AppData\Local\Temp\testng-eclipse-992804238\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:270)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:884)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:791)
 at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -88,17 +55,17 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifySignin -->
-        <test-method signature="getParentWindow()[pri:0, instance:testCases.TC4_VerifyNavigation@4145bad8]" started-at="2021-06-20T13:58:22 IST" name="getParentWindow" finished-at="2021-06-20T13:58:22 IST" depends-on-methods="testCases.TC4_VerifyNavigation.verifySignin" duration-ms="2" status="SKIP">
+        </test-method> <!-- userEntersTraveDetails -->
+        <test-method signature="userClickSearch()[pri:0, instance:testCases.TC2_ListFlights@3646a422]" started-at="2021-08-30T09:05:11 IST" name="userClickSearch" finished-at="2021-08-30T09:05:11 IST" depends-on-methods="testCases.TC2_ListFlights.userEntersTraveDetails" duration-ms="0" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method TC4_VerifyNavigation.getParentWindow()[pri:0, instance:testCases.TC4_VerifyNavigation@4145bad8] depends on not successfully finished methods]]>
+              <![CDATA[Method TC2_ListFlights.userClickSearch()[pri:0, instance:testCases.TC2_ListFlights@3646a422] depends on not successfully finished methods]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method TC4_VerifyNavigation.getParentWindow()[pri:0, instance:testCases.TC4_VerifyNavigation@4145bad8] depends on not successfully finished methods
+              <![CDATA[java.lang.Throwable: Method TC2_ListFlights.userClickSearch()[pri:0, instance:testCases.TC2_ListFlights@3646a422] depends on not successfully finished methods
 at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -123,14 +90,14 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getParentWindow -->
-        <test-method signature="verifyHomePage()[pri:0, instance:testCases.TC4_VerifyNavigation@4145bad8]" started-at="2021-06-20T13:58:22 IST" name="verifyHomePage" finished-at="2021-06-20T13:58:22 IST" depends-on-methods="testCases.TC4_VerifyNavigation.getParentWindow" duration-ms="0" status="SKIP">
+        </test-method> <!-- userClickSearch -->
+        <test-method signature="userVerifyFlightsListed()[pri:0, instance:testCases.TC2_ListFlights@3646a422]" started-at="2021-08-30T09:05:11 IST" name="userVerifyFlightsListed" finished-at="2021-08-30T09:05:11 IST" depends-on-methods="testCases.TC2_ListFlights.userClickSearch" duration-ms="0" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method TC4_VerifyNavigation.verifyHomePage()[pri:0, instance:testCases.TC4_VerifyNavigation@4145bad8] depends on not successfully finished methods]]>
+              <![CDATA[Method TC2_ListFlights.userVerifyFlightsListed()[pri:0, instance:testCases.TC2_ListFlights@3646a422] depends on not successfully finished methods]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method TC4_VerifyNavigation.verifyHomePage()[pri:0, instance:testCases.TC4_VerifyNavigation@4145bad8] depends on not successfully finished methods
+              <![CDATA[java.lang.Throwable: Method TC2_ListFlights.userVerifyFlightsListed()[pri:0, instance:testCases.TC2_ListFlights@3646a422] depends on not successfully finished methods
 at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -155,12 +122,12 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyHomePage -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCases.TC4_VerifyNavigation@4145bad8]" started-at="2021-06-20T13:58:22 IST" name="closeBrowser" finished-at="2021-06-20T13:58:23 IST" duration-ms="834" status="PASS">
+        </test-method> <!-- userVerifyFlightsListed -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCases.TC2_ListFlights@3646a422]" started-at="2021-08-30T09:05:11 IST" name="closeBrowser" finished-at="2021-08-30T09:05:12 IST" duration-ms="1070" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- testCases.TC4_VerifyNavigation -->
+      </class> <!-- testCases.TC2_ListFlights -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

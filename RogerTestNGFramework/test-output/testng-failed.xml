@@ -3,16 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.TC4_VerifyNavigation">
+      <class name="testCases.TC2_ListFlights">
         <methods>
-          <include name="verifyHomePage"/>
-          <include name="setUp"/>
-          <include name="userSelectReprintTicket"/>
-          <include name="verifySignin"/>
-          <include name="getParentWindow"/>
+          <include name="userSelectTravelType"/>
           <include name="closeBrowser"/>
+          <include name="userVerifyFlightsListed"/>
+          <include name="userClickSearch"/>
+          <include name="setUp"/>
+          <include name="userEntersTraveDetails"/>
         </methods>
-      </class> <!-- testCases.TC4_VerifyNavigation -->
+      </class> <!-- testCases.TC2_ListFlights -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
